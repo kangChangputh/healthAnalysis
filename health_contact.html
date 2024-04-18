@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="./health_analysis.css">
+        <style>
+            body{
+                text-align: center;
+            }
+            </style>
+    </head>
+    <body>
+        <nav><h1>Health Analysis Census</h1>
+            <ul>
+                <li><a href="./index.html" id="home">Home</a></li>
+            </ul>
+        </nav>
+        <h1>Contact Us</h1>
+        
+        <p>Feel free to comtact us to know more about your conditions and for treatment methods</p>
+        <form id="contactForm">
+            <div>
+              <label for="name">Name</label><br>
+              <input type="text" id="name" name="name" required><br>
+            </div>
+            <div>
+              <label for="email">Email</label><br>
+              <input type="email" id="email" name="email" required><br>
+            </div>
+            <div>
+              <label for="condition">Condition</label><br>
+              <input type="text" id="condition" name="condition" required><br>
+            </div>
+            <div>
+              <label for="message">Message</label> <br>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" onclick="thankyou()">Submit</button>
+          </form>
+          <script>
+            function thankyou(){
+                alert('Thank you for contacting us!')
+            }
+          </script>
+    </body>
+</html>
