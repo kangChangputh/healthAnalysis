@@ -14,6 +14,7 @@ window.onload = function addPatient() {
         resetForm();
         generateReport();
     }
+    console.log(addPatien);
 }
 
 window.onload = function resetForm() {
